@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'play fair';
+    background-color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #99784a;
+    color: #e8dddd;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: rgb(240, 227, 227);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #99784a;
+    margin-top: -10px;
+  }
+  
+ .nav-links li {
+    float: right;
+  }
+  
+  .nav-links a {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .4s ease;
+  }
+  
+  .nav-links a:hover {
+    color: crimson;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 5px ;
+  }
+ .nav-links li a.active{
+    color: crimson;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 5px ;
+
+  }
+
+  /* .link-navbar ul li a.active {
+      color: #090909 (102, 67, 2);
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ff8800;
+      transition: all .5s ease all;
+  } */
+
+
+.hero-section {
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),  url('asset/photo-1633464130613-0a9154299ac2.jfif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(250, 247, 247);
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: cor;
+    color: #ff8800;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.products-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.products-section h2{
+    color:#090909;
+    font-size: 50px;
+
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #99784a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: rgb(14, 13, 13);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#about.about-section{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),  url('asset/background\ 1.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    color: rgb(18, 17, 17);
+    margin-top: 5%;
+
+}
+
+
+
+.about-section h2{
+    text-align: center;
+    margin-top: 0%;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(252, 252, 249);
+}
+
+/* .about-section{
+    background: url(asset/background\ 1.jpg);
+} */
+.about-section p{
+    width: 50%;
+    height: 50;
+    font-size: 15px;
+    color: #f0efef;
+}
+.about-card{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(177, 133, 56, 0.5);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%; 
+    align-items: center;
+}
+.about-card p {
+    margin-left: 85px;
+}
+
+.contact-section {
+    justify-content: center;
+    color: rgb(11, 11, 11);
+    margin-top: 5%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),  url(asset/photo-1633464130613-0a9154299ac2.jfif)
+    
+}
+
+.contact-section h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px o;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #ff8800;
+    color: #99784a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0%;
+    position: fixed;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .product {
+      width: 45%;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            display: inline;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            background-color: 99784a;
+            position: flex;
+            top:0;
+            left: 0;
+            padding: 20px 0;
+            
+        }
+    
+        .nav-links.active {
+            display:block;
+            color: crimson;
+        }
+    
+        .menu-icon {
+            display: block;
+        }
+    
+        .nav-links li {
+            width: 100%;
+            float: right;
+        }
+    
+        .nav-links a {
+            padding: 12px 20px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .dropdown-menu {
+            position: static;
+            display: none;
+        }
+    
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    }
+    .nav-links {
+        list-style: none; /* Remove bullet points */
+        display: flex; /* Align list items horizontally */
+        gap: 20px; /* Space between list items */
+    }
+    
+    .nav-links li {
+        position: relative; /* Needed for dropdown */
+    }
+    
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 15px;
+        transition: background-color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        background-color: #555;
+    }
+    
+    /* Dropdown Menu */
+    .dropdown-menu {
+        display: none; /* Hide dropdown menu by default */
+        position: absolute;
+        top: 100%; /* Position it right under the parent item */
+        left: 0;
+        background-color: #444;
+        padding: 10px;
+        list-style: none;
+        min-width: 160px; /* Set a minimum width for dropdown */
+    }
+    
+    .dropdown-menu li a {
+        padding: 8px 15px;
+    }
+    
+    /* Show dropdown when hovering over the parent list item */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+  }
